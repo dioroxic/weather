@@ -23,7 +23,7 @@ jobs:
                   coverage: xdebug
             # 安装 composer 依赖
             - name: Install dependencies
-              run: composer install
+              run: composer install --ignore-platform-reqs
             # 执行 PHPUnit 测试
             - name: PHPUnit check
               run: ./vendor/bin/phpunit --coverage-text
