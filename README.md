@@ -2,6 +2,7 @@
 
 <p align="center"> .</p>
 
+[![Tests](https://github.com/Ares-eng/weather/actions/workflows/tests.yml/badge.svg)](https://github.com/Ares-eng/weather/actions/workflows/tests.yml)
 
 ## Installing
 
