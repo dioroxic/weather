@@ -3,7 +3,7 @@
 <p align="center"> .</p>
 
 [![Tests](https://github.com/Ares-eng/weather/actions/workflows/tests.yml/badge.svg)](https://github.com/Ares-eng/weather/actions/workflows/tests.yml)
-
+![StyleCI build status](https://github.styleci.io/repos/476929602/shield) 
 ## Installing
 
 ```shell
