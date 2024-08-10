@@ -7,7 +7,7 @@
 ## Installing
 
 ```shell
-$ composer require ares-eng/weather -vvv
+$ composer require dioroxic/weather -vvv
 ```
 
 ## Usage
