@@ -1,10 +1,10 @@
 {
-    "name": "ares-eng\/weather",
+    "name": "dioroxic\/weather",
     "description": "A weather SDK",
     "license": "MIT",
     "authors": [
         {
-            "name": "ares-eng",
+            "name": "dioroxic",
             "email": "1354709653@qq.com"
         }
     ],
@@ -13,7 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AresEng\\Weather\\": "src"
+            "Dioroxic\\Weather\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dioroxic\\Weather\\Tests\\": "./tests"
         }
     },
     "require-dev": {
@@ -23,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AresEng\\Weather\\ServiceProvider"
+                "Dioroxic\\Weather\\ServiceProvider"
             ]
         }
     }

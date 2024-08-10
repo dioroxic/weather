@@ -1,19 +1,10 @@
 <?php
 
-/*
- * This file is part of the ares-eng/weather.
- *
- * (c) ares-eng <i@ares-eng.me>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
+namespace Dioroxic\Weather\Tests;
 
-namespace Overtrue\Weather\Tests;
-
-use AresEng\Weather\Exceptions\HttpException;
-use AresEng\Weather\Exceptions\InvalidArgumentException;
-use AresEng\Weather\Weather;
+use Dioroxic\Weather\Exceptions\HttpException;
+use Dioroxic\Weather\Exceptions\InvalidArgumentException;
+use Dioroxic\Weather\Weather;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Response;

@@ -1,17 +1,8 @@
 <?php
 
-/*
- * This file is part of the ares-eng/weather.
- *
- * (c) ares-eng <i@ares-eng.me>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
+namespace Dioroxic\Weather;
 
-namespace AresEng\Weather;
-
-class ServiceProvider extends \Illuminate\Support\ServiceProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider implements DeferrableProvider
 {
     protected $defer = true;
 

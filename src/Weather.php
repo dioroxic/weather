@@ -1,18 +1,9 @@
 <?php
 
-/*
- * This file is part of the ares-eng/weather.
- *
- * (c) ares-eng <i@ares-eng.me>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
+namespace Dioroxic\Weather;
 
-namespace AresEng\Weather;
-
-use AresEng\Weather\Exceptions\HttpException;
-use AresEng\Weather\Exceptions\InvalidArgumentException;
+use Dioroxic\Weather\Exceptions\HttpException;
+use Dioroxic\Weather\Exceptions\InvalidArgumentException;
 use GuzzleHttp\Client;
 
 class Weather
@@ -41,19 +32,19 @@ class Weather
 
         // 1. 对 `$format` 与 `$type` 参数进行检查，不在范围内的抛出异常。
         if (!in_array(strtolower($format), ['json', 'xml'])) {
-            throw new InvalidArgumentException('Invalid response format '.$format);
+            throw new InvalidArgumentException('Invalid response format ' . $format);
         } // 检查传来的format 是否符合api要求
 
         if (!in_array(strtolower($type), ['base', 'all'])) {
-            throw new InvalidArgumentException('Invalid type value(base/all)：'.$type);
+            throw new InvalidArgumentException('Invalid type value(base/all)：' . $type);
         } // 检查传来的type 是否符合api要求
 
         // 2. 封装 query 参数，并对空值进行过滤。
         $query = array_filter([
-            'key' => $this->key,
-            'city' => $city,
+            'key'        => $this->key,
+            'city'       => $city,
             'extensions' => strtolower($type),
-            'output' => strtolower($format),
+            'output'     => strtolower($format),
         ]);
 
         try {
